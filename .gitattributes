@@ -1,0 +1,17 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+*.py text eol=lf
+*.html text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+*.csv text eol=lf
+
+# Denote all files that are truly binary and should not be modified
+*.mdf binary
+*.mf4 binary
+*.dbc binary
+*.exe binary
+*.zip binary

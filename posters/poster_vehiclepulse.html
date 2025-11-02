@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEHICLEPULSE - Poster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', 'Helvetica', sans-serif;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .poster {
+            width: 1200px;
+            height: 1800px;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            position: relative;
+            overflow: hidden;
+            border: 5px solid #00ff88;
+            box-shadow: 0 0 50px rgba(0, 255, 136, 0.3);
+        }
+        
+        .pulse-line {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 98px,
+                rgba(0, 255, 136, 0.1) 98px,
+                rgba(0, 255, 136, 0.1) 100px
+            );
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+        
+        .content {
+            position: relative;
+            z-index: 10;
+            padding: 80px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        
+        .header {
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 180px;
+            font-weight: 900;
+            color: #00ff88;
+            text-shadow: 
+                0 0 20px rgba(0, 255, 136, 0.8),
+                0 0 40px rgba(0, 255, 136, 0.6),
+                0 0 60px rgba(0, 255, 136, 0.4);
+            letter-spacing: 15px;
+            margin-bottom: 30px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes glow {
+            from { text-shadow: 0 0 20px rgba(0, 255, 136, 0.8), 0 0 40px rgba(0, 255, 136, 0.6); }
+            to { text-shadow: 0 0 30px rgba(0, 255, 136, 1), 0 0 60px rgba(0, 255, 136, 0.8), 0 0 90px rgba(0, 255, 136, 0.6); }
+        }
+        
+        .tagline {
+            font-size: 48px;
+            color: #ffffff;
+            margin-bottom: 60px;
+            font-weight: 300;
+            letter-spacing: 5px;
+        }
+        
+        .features {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 40px;
+        }
+        
+        .feature {
+            background: rgba(0, 255, 136, 0.1);
+            border-left: 5px solid #00ff88;
+            padding: 30px 40px;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .feature-title {
+            font-size: 42px;
+            color: #00ff88;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+        
+        .feature-desc {
+            font-size: 28px;
+            color: #cccccc;
+            line-height: 1.6;
+        }
+        
+        .middle-section {
+            text-align: center;
+            margin: 60px 0;
+        }
+        
+        .main-message {
+            font-size: 64px;
+            color: #ffffff;
+            font-weight: 700;
+            margin-bottom: 30px;
+            line-height: 1.3;
+        }
+        
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 60px;
+            gap: 40px;
+        }
+        
+        .stat {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 72px;
+            color: #00ff88;
+            font-weight: 900;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 24px;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 60px;
+        }
+        
+        .subtitle {
+            font-size: 36px;
+            color: #00ff88;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .description {
+            font-size: 28px;
+            color: #cccccc;
+            line-height: 1.8;
+        }
+        
+        .tech-badge {
+            display: inline-block;
+            background: rgba(0, 255, 136, 0.2);
+            color: #00ff88;
+            padding: 10px 25px;
+            margin: 10px;
+            border-radius: 25px;
+            font-size: 20px;
+            border: 2px solid #00ff88;
+        }
+        
+        @media print {
+            body {
+                background: white;
+            }
+            .poster {
+                border: none;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="poster">
+        <div class="pulse-line"></div>
+        <div class="content">
+            <div class="header">
+                <div class="logo">VEHICLEPULSE</div>
+                <div class="tagline">Feel the Pulse of Your Vehicle Data</div>
+            </div>
+            
+            <div class="middle-section">
+                <div class="main-message">
+                    Multi-OEM<br>Diagnostic Analytics<br>Platform
+                </div>
+            </div>
+            
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-title">📊 Signal Analysis</div>
+                    <div class="feature-desc">Real-time signal plotting, FFT, histograms, and statistical analysis across 17+ signal types</div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-title">🗺️ Empirical Maps</div>
+                    <div class="feature-desc">Generate 2D heatmaps and 3D surface plots for calibration optimization</div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-title">🔍 Advanced Detection</div>
+                    <div class="feature-desc">Misfire detection, gear hunting analysis, DFC analysis, and fuel consumption insights</div>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-title">🤖 Calibration AI</div>
+                    <div class="feature-desc">Automated map optimization and intelligent recommendations for calibration engineers</div>
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat">
+                    <span class="stat-number">622+</span>
+                    <div class="stat-label">Signal Mappings</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">17+</span>
+                    <div class="stat-label">Signal Types</div>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">15+</span>
+                    <div class="stat-label">OEM Support</div>
+                </div>
+            </div>
+            
+            <div class="footer">
+                <div class="subtitle">Supported Formats</div>
+                <div>
+                    <span class="tech-badge">MDF/MF4</span>
+                    <span class="tech-badge">CSV</span>
+                    <span class="tech-badge">Excel</span>
+                </div>
+                <div class="description" style="margin-top: 40px;">
+                    For Diagnostic Engineers • Calibration Specialists • Data Analysts
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

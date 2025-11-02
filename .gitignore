@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+.venv
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+server.log
+server-*.log
+
+# Temporary files
+tmp_plots/
+tmp_*/
+*.tmp
+
+# Cache directories
+dbc_repo_cache/
+*.cache
+
+# Temporary downloads (keep collected_dbc_files/)
+dbc_temp_downloads/
+
+# Generated outputs (can be regenerated)
+maps_outputs/
+test_exports/
+
+# Uploaded files (sample data - users will upload their own)
+uploads/*.mdf
+uploads/*.mf4
+uploads/*.csv
+uploads/*.xlsx
+uploads/*.zip
+
+# Large sample data files (keep folder structure)
+*.mdf
+*.mf4
+
+# Windows executables
+*.exe
+python-installer.exe
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Environment variables
+.env
+.env.local
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+

@@ -38,15 +38,6 @@
 
 > **🌐 Try it online:** [Coming Soon - Deploy to Render/Railway/Heroku](#deployment)
 
-**Quick Local Demo:**
-```bash
-git clone https://github.com/25Bonged/VEHICLE-LAB.git
-cd backend_mdf
-pip install -r requirements.txt
-python3 launch_dashboard.py
-# Open http://localhost:8000 in your browser
-```
-
 ### 📸 Dashboard Preview
 
 <div align="center">
@@ -102,11 +93,37 @@ python3 launch_dashboard.py
 - Efficiency analysis
 - Real-world fuel economy metrics
 
-#### 5. **Additional Diagnostic Modules**
-- **DFC** (Dynamic Fuel Consumption): Real-world fuel analysis
-- **IUPR** (In-Use Performance Ratio): OBD-II compliance monitoring
-- **CC/SL** (Catalyst/Secondary Air): Emissions systems analysis
-- **CIE Integration**: Calibration Intelligence Engine
+#### 5. **Robust Advanced DFC (Dynamic Fuel Consumption) Analysis**
+- **DTC Code Format Parsing**: Automatic OBD-II standard recognition (SAE J2012, J1979, ISO 14229)
+  - P-codes (Powertrain), B-codes (Body), C-codes (Chassis), U-codes (Network)
+  - Priority levels: P0 (SAE standard), P1 (Manufacturer-specific)
+- **Status Byte Decoding**: ISO 14229 standard decoding
+  - Test failed, Confirmed DTC, Pending DTC, MIL request status
+- **Intelligent Severity Assessment**: 4-level classification (Critical/High/Medium/Low)
+  - Scoring based on priority, frequency, duration, and code type
+- **Temporal Analysis**: Exact time segments when DTCs are active
+  - First/last occurrence tracking, maximum duration analysis
+- **Signal Correlation**: Captures related signal values at DTC events
+- **Freeze Frame Detection**: OBD-II freeze frame data extraction
+- **Enhanced Visualizations**: Severity-color-coded plots with event timelines
+
+#### 6. **IUPR (In-Use Performance Ratio) Monitoring**
+- **OBD-II Compliance**: Real-world emission monitoring per SAE J1979
+- **Monitor Completeness Tracking**: Tracks readiness status of all emission monitors
+- **Compliance Ratio Calculation**: IUPR values for individual monitors and overall fleet
+- **Driving Cycle Analysis**: Evaluates monitor completion across different drive cycles
+- **Regulatory Reporting**: Generates compliance reports for regulatory requirements
+- **Trend Analysis**: Historical IUPR tracking and degradation detection
+
+#### 7. **Fleet Data Diagnosis & Analytics**
+- **Multi-Vehicle Processing**: Batch analysis of multiple vehicle data files
+- **Fleet-Wide Trend Analysis**: Identify patterns across entire vehicle fleets
+- **Comparative Diagnostics**: Compare performance metrics across vehicles
+- **Anomaly Detection**: Automated identification of outliers and problematic vehicles
+- **Aggregated Reporting**: Fleet-level summaries and statistics
+- **Health Monitoring**: Track vehicle health status across time
+- **Predictive Analytics**: Early warning system for potential failures
+- **Custom Fleet Dashboards**: Fleet-specific visualization and monitoring
 
 ### 🔧 Technical Features
 

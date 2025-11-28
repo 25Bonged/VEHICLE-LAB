@@ -1,8 +1,8 @@
 # 🚗 VEHICLE-LAB
 
-**A comprehensive vehicle diagnostic and analysis platform for MDF/MF4 files**
+**A comprehensive vehicle diagnostic and analysis platform for CAN/OBD files**
 
-🚀 Live Demo • 📖 Documentation • 💻 Features • 🔄 Workflow • 📚 Repository Info
+• 📖 Documentation • 💻 Features • 🔄 Workflow • 📚 Repository Info
 
 > ⚠️ **Note:** This is a **documentation-only repository**. All source code (`.py` files) is **private and proprietary**. Only documentation, guides, and examples are included. See CODE_PRIVACY.md for details.
 
@@ -135,13 +135,6 @@ DiagAI is an intelligent diagnostic assistant powered by Large Language Models (
 | ------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | ![Misfire Detection](docs/screenshots/misfire.png)                                    | ![Gear Hunt](docs/screenshots/gear-hunt.png)                                            | ![Fuel Analysis](docs/screenshots/fuel-analysis.png)                                 |
 | 9 detection algorithms, severity analysis, event timeline                            | Automatic detection, speed-RPM correlation, hunting event visualization                | BSFC maps, fuel consumption metrics, efficiency analysis                            |
-
-#### **3D Visualization**
-
-| **3D Empirical Maps**                                                                 |
-| ------------------------------------------------------------------------------------- |
-| ![3D Empirical Map](docs/screenshots/empirical-map-3d.png)                            |
-| Interactive 3D surface plots with rotation, zoom, and export capabilities           |
 
 ---
 

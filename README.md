@@ -17,12 +17,12 @@
 **VEHICLE-LAB** provides a complete ecosystem for vehicle data analysis:
 
 * **🔬 OEM-Level Analysis**: 9 misfire detection algorithms, advanced gear hunting detection, comprehensive diagnostic agents
-* **📊 MATLAB-Grade Maps**: Empirical map generation with Kriging, RBF, and cubic spline interpolation - production-ready accuracy
+* **📊 Maps**: Empirical map generation with Kriging, RBF, and cubic spline interpolation - production-ready accuracy
 * **🌐 Web-Based Dashboard**: No installation required, runs in any modern browser with real-time processing
 * **📁 Multi-Format Support**: MDF, MF4, CSV, Excel (.xlsx, .xls) - handles all major automotive data formats
 * **🚀 Real-Time Processing**: Interactive Plotly visualizations with LTTB downsampling for large datasets
 * **🔍 Auto Signal Mapping**: Intelligent signal detection across 330+ DBC files from multiple OEMs
-* **🤖 DiagAI - The Cherry on Top**: Advanced LLM-powered vehicle data analysis with natural language queries - ask questions, get engineering-grade insights instantly
+* **🤖 DiagAI**: Advanced LLM-powered vehicle data analysis with natural language queries - ask questions, get engineering-grade insights instantly
 
 ### 🍒 DiagAI: The Game Changer
 
@@ -147,7 +147,7 @@ DiagAI is an intelligent diagnostic assistant powered by Large Language Models (
 
 ## 🎯 Key Features
 
-### 🤖 DiagAI - AI-Powered Diagnostics (The Cherry on Top)
+### 🤖 DiagAI - AI-Powered Diagnostics 
 
 **Natural Language Interface**
 * Ask questions in plain English: "What's the average RPM during acceleration?"

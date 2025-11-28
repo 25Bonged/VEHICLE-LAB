@@ -17,7 +17,7 @@
 **VEHICLE-LAB** provides a complete ecosystem for vehicle data analysis:
 
 * **🔬 OEM-Level Analysis**: 9 misfire detection algorithms, advanced gear hunting detection, comprehensive diagnostic agents
-* **📊 MATLAB-Grade Maps**: Empirical map generation with Kriging, RBF, and cubic spline interpolation - production-ready accuracy
+* **📊 Maps**: Empirical map generation with Kriging, RBF, and cubic spline interpolation - production-ready accuracy
 * **🌐 Web-Based Dashboard**: No installation required, runs in any modern browser with real-time processing
 * **📁 Multi-Format Support**: MDF, MF4, CSV, Excel (.xlsx, .xls) - handles all major automotive data formats
 * **🚀 Real-Time Processing**: Interactive Plotly visualizations with LTTB downsampling for large datasets
